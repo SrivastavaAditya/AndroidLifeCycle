@@ -7,4 +7,5 @@
     <string name="on_pause_method_called">On Pause Method Called</string>
     <string name="on_stop_method_called">On Stop Method Called</string>
     <string name="on_destroy_method_called">On Destroy Method Called</string>
+    <string name="main_activity_str">Main Activity</string>
 </resources>
