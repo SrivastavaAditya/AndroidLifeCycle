@@ -3,4 +3,13 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!-- Color codes used to distinguish between Activity current state -->
+    <color name="onCreate">#FFFF33</color>
+    <color name="onStart">#33FFF6</color>
+    <color name="onResume">#89FF60</color>
+    <color name="onRestart">#248C00</color>
+    <color name="onPause">#F563E1</color>
+    <color name="onStop">#00208D</color>
+    <color name="onDestroy">#FB0000</color>
 </resources>
