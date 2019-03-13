@@ -1,11 +1,23 @@
 <resources>
     <string name="app_name">AndroidLifeCycleApp</string>
-    <string name="on_create_method_called">On Create Method Called</string>
-    <string name="on_start_method_called">On Start Method Called</string>
-    <string name="on_resume_method_called">On Resume Method Called</string>
-    <string name="on_restart_method_called">On Restart Method Called</string>
-    <string name="on_pause_method_called">On Pause Method Called</string>
-    <string name="on_stop_method_called">On Stop Method Called</string>
-    <string name="on_destroy_method_called">On Destroy Method Called</string>
+    
+    <string name="main_on_create_method_called">MainActivity: On Create Method Called</string>
+    <string name="main_on_start_method_called">MainActivity: On Start Method Called</string>
+    <string name="main_on_resume_method_called">MainActivity: On Resume Method Called</string>
+    <string name="main_on_restart_method_called">MainActivity: On Restart Method Called</string>
+    <string name="main_on_pause_method_called">MainActivity: On Pause Method Called</string>
+    <string name="main_on_stop_method_called">MainActivity: On Stop Method Called</string>
+    <string name="main_on_destroy_method_called">MainActivity: On Destroy Method Called</string>
+
+    <string name="second_on_create_method_called">SecondActivity: On Create Method Called</string>
+    <string name="second_on_start_method_called">SecondActivity: On Start Method Called</string>
+    <string name="second_on_resume_method_called">SecondActivity: On Resume Method Called</string>
+    <string name="second_on_restart_method_called">SecondActivity: On Restart Method Called</string>
+    <string name="second_on_pause_method_called">SecondActivity: On Pause Method Called</string>
+    <string name="second_on_stop_method_called">SecondActivity: On Stop Method Called</string>
+    <string name="second_on_destroy_method_called">SecondActivity: On Destroy Method Called</string>
+    
     <string name="main_activity_str">Main Activity</string>
+    <string name="second_activity_str">Second Activity</string>
+    <string name="navigate_to_second_activity">Navigate to Next Activity</string>
 </resources>
