@@ -9,15 +9,18 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.adityasrivastava.androidlifecycleapp.R;
 import com.example.adityasrivastava.androidlifecycleapp.utils.Utility;
 
-public class FirstFragment extends Fragment {
+public class FirstFragment extends Fragment implements View.OnClickListener {
 
     public FirstFragment() {
         // Required empty public constructor
     }
+
+    Button buttonReplace, buttonAdd;
 
     @Override
     public void onAttach(Context context) {
@@ -39,7 +42,19 @@ public class FirstFragment extends Fragment {
         // Inflate the layout for this fragment
         Utility.showMessage(getContext(), getResources()
                 .getString(R.string.first_fragment_on_create_view_method_called));
-        return inflater.inflate(R.layout.fragment_my, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_my, container, false);
+
+        setUpViews(rootView);
+
+        return rootView;
+    }
+
+    private void setUpViews(View rootView) {
+        buttonAdd = rootView.findViewById(R.id.btn_click_add);
+        buttonReplace = rootView.findViewById(R.id.btn_click_replace);
+
+        buttonAdd.setOnClickListener(this);
+        buttonReplace.setOnClickListener(this);
     }
 
     @Override
@@ -96,5 +111,25 @@ public class FirstFragment extends Fragment {
         super.onDetach();
         Utility.showMessage(getContext(), getResources()
                 .getString(R.string.first_fragment_on_detach_method_called));
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch(view.getId()){
+            case R.id.btn_click_add:
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .add(android.R.id.content, new SecondFragment()).addToBackStack(null)
+                        .commit();
+                break;
+
+            case R.id.btn_click_replace:
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(android.R.id.content, new SecondFragment()).addToBackStack(null)
+                        .commit();
+                break;
+
+            default:
+                break;
+        }
     }
 }

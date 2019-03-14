@@ -12,7 +12,6 @@
     <color name="onPause">#F563E1</color>
     <color name="onStop">#00208D</color>
     <color name="onDestroy">#FB0000</color>
-    <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 </resources>
