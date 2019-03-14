@@ -22,4 +22,18 @@
     <string name="first_fragment_on_destroy_method_called">First Fragment: On Destroy Method Cal;ed</string>
     <string name="first_fragment_on_detach_method_called">First Fragment: On Detach Method Called</string>
     <string name="first_fragment_on_view_created_method_called">First Fragment: On View Created Method Called</string>
+    <string name="navigate_to_next_fragment">Navigate To Next Fragment</string>
+    <string name="second_fragment_on_attach_method_called">Second Method: On Attach Method Called</string>
+    <string name="second_fragment_on_create_method_called">Second Fragment: On Create Method Called</string>
+    <string name="second_fragment_on_create_view_method_called">Second Fragment: On Create View Method Called</string>
+    <string name="second_fragment_on_view_created_method_called">Second Fragment: On View Created Method Called</string>
+    <string name="second_fragment_on_activity_created_method_called">Second Fragment: On Activity Created Method Called</string>
+    <string name="second_fragment_on_start_method_called">Second Fragment: On Start Method Called</string>
+    <string name="second_fragment_on_resume_method_called">Second Fragment: On Resume Method Called</string>
+    <string name="second_fragment_on_pause_method_called">Second Fragment: On PAuse Method Called</string>
+    <string name="second_fragment_on_stop_method_called">Second Fragment: On stop Method Called</string>
+    <string name="second_fragment_on_destroy_view_method_called">Second Fragment: On Destroy View Method Called</string>
+    <string name="second_fragment_on_destroy_method_called">Second Fragment: On Destroy Method Called</string>
+    <string name="second_fragment_on_detach_method_called">Second Fragment: On Detach Method Called</string>
+    <string name="second_fragment_str">Second Fragment</string>
 </resources>
