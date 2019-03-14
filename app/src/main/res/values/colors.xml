@@ -13,4 +13,5 @@
     <color name="onStop">#00208D</color>
     <color name="onDestroy">#FB0000</color>
     <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>
