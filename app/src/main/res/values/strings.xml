@@ -19,7 +19,7 @@
     <string name="first_fragment_on_pause_method_called">First Fragment: On Pause Method Called</string>
     <string name="first_fragment_on_stop_method_called">First Fragment: On Stop Method Called</string>
     <string name="first_fragment_on_destroy_view_method_called">First Fragment: On Destroy View Method Called</string>
-    <string name="first_fragment_on_destroy_method_called">First Fragment: On Destroy Method Cal;ed</string>
+    <string name="first_fragment_on_destroy_method_called">First Fragment: On Destroy Method Called</string>
     <string name="first_fragment_on_detach_method_called">First Fragment: On Detach Method Called</string>
     <string name="first_fragment_on_view_created_method_called">First Fragment: On View Created Method Called</string>
 </resources>
