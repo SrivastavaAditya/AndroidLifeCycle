@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
     View parentLayout;
 
+    String TAG = getClass().getSimpleName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onCreate));
         Utility.showMessage(this, getResources().getString(R.string.on_create_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.on_create_method_called));
     }
 
     @Override
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onStart));
         Utility.showMessage(this, getResources().getString(R.string.on_start_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.on_start_method_called));
     }
 
     @Override
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onResume));
         Utility.showMessage(this, getResources().getString(R.string.on_resume_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.on_resume_method_called));
     }
 
     @Override
@@ -43,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         super.onRestart();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onRestart));
         Utility.showMessage(this, getResources().getString(R.string.on_restart_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.on_restart_method_called));
     }
 
     @Override
@@ -50,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onPause));
         Utility.showMessage(this, getResources().getString(R.string.on_pause_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.on_pause_method_called));
     }
 
     @Override
@@ -57,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onStop));
         Utility.showMessage(this, getResources().getString(R.string.on_stop_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.on_stop_method_called));
     }
 
     @Override
@@ -64,5 +72,6 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onDestroy));
         Utility.showMessage(this, getResources().getString(R.string.on_destroy_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.on_destroy_method_called));
     }
 }
