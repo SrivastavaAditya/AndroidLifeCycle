@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     Button buttonClick;
 
+    String TAG = "State";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onCreate));
         Utility.showMessage(this, getResources().getString(R.string.main_on_create_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_create_method_called));
+
     }
 
     private void setViews() {
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onStart();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onStart));
         Utility.showMessage(this, getResources().getString(R.string.main_on_start_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_start_method_called));
     }
 
     @Override
@@ -55,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onResume();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onResume));
         Utility.showMessage(this, getResources().getString(R.string.main_on_resume_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_resume_method_called));
     }
 
     @Override
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onRestart();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onRestart));
         Utility.showMessage(this, getResources().getString(R.string.main_on_restart_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_restart_method_called));
     }
 
     @Override
@@ -69,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onPause();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onPause));
         Utility.showMessage(this, getResources().getString(R.string.main_on_pause_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_pause_method_called));
     }
 
     @Override
@@ -76,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onStop();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onStop));
         Utility.showMessage(this, getResources().getString(R.string.main_on_stop_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_stop_method_called));
     }
 
     @Override
@@ -83,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
         parentLayout.setBackgroundColor(getResources().getColor(R.color.onDestroy));
         Utility.showMessage(this, getResources().getString(R.string.main_on_destroy_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_destroy_method_called));
     }
 
     @Override
