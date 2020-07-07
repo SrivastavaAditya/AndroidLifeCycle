@@ -22,27 +22,34 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
 
     Button buttonReplace, buttonAdd;
 
+    String TAG = "State";
+
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_attach_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_attach_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_attach_method_called));
+
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_create_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_create_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_create_method_called));
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_create_view_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_create_view_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_create_view_method_called));
+
         View rootView = inflater.inflate(R.layout.fragment_my, container, false);
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_create_view_method_called));
 
         setUpViews(rootView);
 
@@ -60,57 +67,58 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_view_created_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_view_created_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_view_created_method_called));
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_activity_created_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_activity_created_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_activity_created_method_called));
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_resume_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_resume_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_resume_method_called));
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_pause_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_pause_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_pause_method_called));
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_stop_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_stop_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_stop_method_called));
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_destroy_view_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_destroy_view_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_destroy_view_method_called));
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_destroy_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_destroy_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.main_on_destroy_method_called));
+
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        Utility.showMessage(getContext(), getResources()
-                .getString(R.string.first_fragment_on_detach_method_called));
+        Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_detach_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_detach_method_called));
     }
 
     @Override
