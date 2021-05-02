@@ -10,6 +10,6 @@ public class Utility {
     }
 
     public static void Log(String className, String message){
-        Log.d(className, message);
+        Log.i("LifeCycle"+className, message);
     }
 }

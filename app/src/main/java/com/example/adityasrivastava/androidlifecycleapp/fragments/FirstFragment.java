@@ -61,6 +61,13 @@ public class FirstFragment extends Fragment {
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        Utility.showMessage(getContext(), "First Fragment: On Start Method Called");
+        Utility.Log(TAG, "First Fragment: On Start Method Called");
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
         Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_resume_method_called));
@@ -92,7 +99,7 @@ public class FirstFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         Utility.showMessage(getContext(), getResources().getString(R.string.first_fragment_on_destroy_method_called));
-        Utility.Log(TAG, getResources().getString(R.string.main_on_destroy_method_called));
+        Utility.Log(TAG, getResources().getString(R.string.first_fragment_on_destroy_method_called));
 
     }
 
